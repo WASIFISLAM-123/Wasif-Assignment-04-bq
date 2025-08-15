@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --font-primary: "Poppins", sans-serif;
+    --font-secondary: "Roboto", sans-serif;
+    --primary-color: #5c3a21;
+    --secondary-color: #d2a679;
+    --light-color: #EED9C4;
+    --color-1: #fff;
+    --color-2: #000;
+}
+
+html {
+    font-family: var(--font-primary);
+    font-family: var(--font-secondary);
+}
+
+.navbar {
+    background-color: var(--primary-color);
+    color: var(--color-1);
+    height: auto;
+    overflow: auto;
+}
+
+.navbar .logo {
+    float: left;
+    padding: 20px;
+    font-size: 25px;
+    margin-left: 10rem;
+}
+
+.logo:hover {
+    color: var(--light-color);
+}
+
+.navbar .list {
+    float: right;
+    list-style: none;
+}
+
+.navbar .list li {
+    float: left;
+    margin-right: 40px;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.navbar .list li a {
+    text-decoration: none;
+    color: var(--color-1);
+}
+
+.navbar .list li a:hover {
+    font-size: 25px;
+    background-color: var(--light-color);
+    color: var(--color-2);
+
+}
+
+.navbar .list li:last-child {
+    margin-right: 11rem;
+}
+
+/*Hero Section */
+.hero-section {
+    width: 100%;
+    height: 90vh;
+    background-color: var(--secondary-color);
+    background: rgba(0,0,0,0.7)url(./img/Home.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+
+}
+
+.hero-section h1 {
+    font-size: 40px;
+    color: var(--color-1);
+    text-align: center;
+    padding: 250px;
+}
+
+.hero-section p {
+    font-size: 20px;
+    color: var(--color-1);
+    text-align: center;
+    margin: -225px;
+}
+
+.hero-btn {
+    background-color: var(--primary-color);
+    font-size: 14px;
+    color: var(--color-1);
+    display: block;
+    padding: 10px 40px;
+    margin: 16rem auto;
+    text-align: center;
+}
+
+.hero-btn:hover {
+    background-color: #000;
+    color: var(--color-1);
+
+}
+
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    width: 100%;
+    padding: 20px;
+    background: #fffaf2;
+    gap: 20px;
+}
+
+.about-left {
+    flex: 1;
+}
+
+.about-left img {
+    display: flex;
+    width: 60%;
+    height: 60vh;
+    padding: 20px;
+    border-radius: 50px;
+    gap: 10px;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-content h2 {
+    margin-bottom: 15px;
+    color: var(--color-2);
+}
+
+.about-content p {
+    color: var(--color-2);
+    font-size: 19px;
+    line-height: normal;
+}
+
+/* Services Section */
+.services {
+    height: 70vh;
+    width: 100%;
+    background: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 45px;
+    color: var(--color-1);
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 500px;
+}
+
+.service-box {
+    background: var(--light-color);
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 400px;
+}
+
+
+.service-box h3 {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.service-box p {
+    font-size: 16px;
+}
+
+/* Footer Section */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 19%;
+    min-width: 150px;
+}
+
+.footer-col h3 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.footer-col p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footer-col a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.footer-col a:hover {
+    color: var(--secondary-color);
+}
+
+.Footer-bottom {
+    width: 100%;
+    border-top: 1px solid #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+
+/* About Page Start */
+
+/* About Section */
+.About-section {
+    width: 100%;
+    height: 90vh;
+    background-color: var(--secondary-color);
+    background: rgba(0,0,0,0.7)url(./img/About.png);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.About-section h1 {
+    font-size: 40px;
+    color: var(--color-1);
+    text-align: center;
+    padding: 250px;
+}
+
+.About-section p {
+    font-size: 20px;
+    color: var(--color-1);
+    text-align: center;
+    margin: -235px;
+}
+
+
+/* Menu Page Start */
+
+/* Menu Section */
+.Menu-section {
+    width: 100%;
+    height: 90vh;
+    background-color: var(--secondary-color);
+    background: rgba(0,0,0,0.7)url(./img/Menu.png);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Menu-section h1 {
+    font-size: 40px;
+    color: var(--color-1);
+    text-align: center;
+    padding: 250px;
+}
+
+.Menu-section p {
+    font-size: 20px;
+    color: var(--color-1);
+    text-align: center;
+    margin: -235px;
+}
+
+/* Services Page Start */
+
+/* Services Section */
+.Services-section {
+    width: 100%;
+    height: 90vh;
+    background-color: var(--secondary-color);
+    background: rgba(0,0,0,0.7)url(./img/Services.png);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Services-section h1 {
+    font-size: 40px;
+    color: var(--color-1);
+    text-align: center;
+    padding: 250px;
+}
+
+.Services-section p {
+    font-size: 20px;
+    color: var(--color-1);
+    text-align: center;
+    margin: -235px;
+}
+
+/* Contact Page Start */
+
+/* Contact Section */
+
+.Contact-section  {  
+   width: 100%;
+   height: 90vh;
+}
+
+#contact {
+  padding: 60px 20px;
+  text-align: center;
+  background: var(--light-color);
+}
+
+#contact h2 {
+  font-size: 2rem;
+  color: var(--color-2);
+  margin-bottom: 10px;
+}
+
+#contact p {
+  font-size: 1rem;
+  color: var(--color-2);
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  color: var(--secondary-color)f;
+}
+
+.form-group input, 
+.form-group ::placeholder {
+  color: var(--secondary-color);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--light-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.btn-submit {
+  color: var(--primary-color);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-submit:hover {
+  background: var(--primary-color);
+  color: var(--color-1);
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
